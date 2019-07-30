@@ -8,7 +8,6 @@ z.zip = sbx.postcode2
 GROUP BY z.zip
 ORDER BY num_sbx DESC;
 
-
 -- DROP VIEW sbx_zip;
 
 CREATE VIEW irsaggs AS
@@ -23,10 +22,10 @@ z.zip = i.zipcode
 GROUP BY z.zip
 ORDER BY z.zip;
 
--- DROP VIEW wf_clean;
-
 CREATE VIEW wf_clean AS
 SELECT DISTINCT * FROM wflocs;
+
+-- DROP VIEW aggregated data;
 
 CREATE VIEW aggregated_data AS
 SELECT z.zip, z.state, s.num_sbx, count(wf.wf_address) AS num_wf, i.rets, i.dep, i.ret_tot_inc, 

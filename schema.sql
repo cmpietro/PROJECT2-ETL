@@ -48,16 +48,9 @@ CREATE TABLE SbxLocs (
 
 
 CREATE TABLE WFlocs (
-	store_number INTEGER,
-	store_name VARCHAR(255),
-	street_address VARCHAR(255),
-	city VARCHAR(255),
-	state VARCHAR(2),
-	zip_code VARCHAR(5),
-	lat NUMERIC,
-	lon NUMERIC,
-	PRIMARY KEY (store_number),
-	FOREIGN KEY (zip_code REFERENCES Zip_codes(zip)
+	wf_address VARCHAR(255),
+	wf_zip VARCHAR(5),
+	PRIMARY KEY wf_address
 );
 
 
