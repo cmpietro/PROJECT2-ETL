@@ -36,42 +36,27 @@ CREATE TABLE SbxLocs (
 	City_VARCHAR(255),
 	State_Province VARCHAR(3),
 	Country VARCHAR(2),
-	Postcode VARCHAR(5),
+	Postcode VARCHAR(255),
 	Phone_Number VARCHAR(255),
 	Timezone VARCHAR(255),
 	Longitude NUMERIC,
 	Latitude NUMERIC,
-	PRIMARY KEY (Store Number),
-	FOREIGN KEY (Postcode) REFERENCES Zip_codes(zip)
+	Postcode2 VARCHAR(5),
+	PRIMARY KEY (Store Number)
 );
 
 
 
 CREATE TABLE WFlocs (
-	store_number INTEGER,
-	store_name VARCHAR(255),
-	street_address VARCHAR(255),
-	city VARCHAR(255),
-	state VARCHAR(2),
-	zip_code VARCHAR(5),
-	lat NUMERIC,
-	lon NUMERIC,
-	PRIMARY KEY (store_number),
-	FOREIGN KEY (zip_code REFERENCES Zip_codes(zip)
+	wf_address VARCHAR(255),
+	wf_zip VARCHAR(5),
+	PRIMARY KEY wf_address
 );
 
 
 CREATE TABLE McDLocs (
 	store_number INTEGER,
-	store_name VARCHAR(255),
-	street_address VARCHAR(255),
-	city VARCHAR(255),
-	state VARCHAR(2),
-	zip_code VARCHAR(5),
-	lat NUMERIC,
-	long NUMERC,
-	PRIMARY KEY (store_number),
-	FOREIGN KEY (zip_code) REFERENCES Zip_codes(zip)
+	zip_code VARCHAR(5)
 );
 
 CREATE TABLE IRS_2016_abridged (
