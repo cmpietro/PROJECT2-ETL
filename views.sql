@@ -28,8 +28,10 @@ ORDER BY z.zip;
 CREATE VIEW wf_clean AS
 SELECT DISTINCT * FROM wflocs;
 
+-- DROP VIEW aggregated_data
+
 CREATE VIEW aggregated_data AS
-SELECT z.zip, z.state, s.num_sbx, count(wf.wf_address) AS num_wf, i.rets, i.dep, i.ret_tot_inc, 
+SELECT z.zip, z.state, count(mcd.store_number) AS num_McD, s.num_sbx, count(wf.wf_address) AS num_wf, i.rets, i.dep, i.ret_tot_inc, 
  i.tot_inc, i.ret_wages, i.wages, i.rets_bus_inc, i.bus_inc, i.ret_cap_gain, i.cap_gain, 
  i.rets_unemp, i.unemp, i.rets_stu_loan_deduct, i.stu_loan_deduct
 FROM zip_codes as z
@@ -39,6 +41,9 @@ LEFT JOIN sbx_zip AS s ON
 z.zip = s.zip
 LEFT JOIN wf_clean AS wf ON
 z.zip = wf.wf_zip
+LEFT JOIN mcdlocs AS mcd ON
+z.zip = mcd.zip_code
 GROUP BY z.zip, s.num_sbx, i.rets, i.dep, i.ret_tot_inc, 
  i.tot_inc, i.ret_wages, i.wages, i.rets_bus_inc, i.bus_inc, i.ret_cap_gain, i.cap_gain, 
  i.rets_unemp, i.unemp, i.rets_stu_loan_deduct, i.stu_loan_deduct;
+
