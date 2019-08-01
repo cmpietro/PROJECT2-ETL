@@ -33,7 +33,7 @@ CREATE TABLE SbxLocs (
 	Store_Name VARCHAR(255),
 	Ownership_Type VARCHAR(255),
 	Street_Address VARCHAR(255),
-	City_VARCHAR(255),
+	City VARCHAR(255),
 	State_Province VARCHAR(3),
 	Country VARCHAR(2),
 	Postcode VARCHAR(255),
@@ -42,7 +42,7 @@ CREATE TABLE SbxLocs (
 	Longitude NUMERIC,
 	Latitude NUMERIC,
 	Postcode2 VARCHAR(5),
-	PRIMARY KEY (Store Number)
+	PRIMARY KEY (Store_Number)
 );
 
 
@@ -50,7 +50,7 @@ CREATE TABLE SbxLocs (
 CREATE TABLE WFlocs (
 	wf_address VARCHAR(255),
 	wf_zip VARCHAR(5),
-	PRIMARY KEY wf_address
+	PRIMARY KEY (wf_address)
 );
 
 
