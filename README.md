@@ -2,7 +2,7 @@
 ETL Second Project
 TEAM consists of: John Goebel, Nick Weaver, Mohammed Irshad, and Carol Pietro
 
-Location of Web Services: 
+Location of Web Services:  https://cmpietro.github.io/PROJECT_2_ETL/
 
 EXECUTIVE SUMMARY
 
@@ -11,9 +11,10 @@ Please review the documentation located on this site for use of the data contain
 
 Our team, John, Nick, Carol and Mohammad used the skills we have learned in the DataAnalytics bootcamp to bring to you a transformed set of data for use in answering potential questions like: Is there any coorelation between Starbucks, McDonalds, WholeFoods and median household income?  or How many Starbucks are located in what zipcodes?   What is the median household income by zipcode?
 
-FOR INSTRUCTOR and TA USE: Please review the 
+FOR INSTRUCTOR and TA USE: Please review the Project2guidebook.xlsx for the most comprehensive documentation of the project.  
+This is a multi-tab excel with all the documentation of the project from conception to implementation.  
 
-UPDATED THROUGH 7-27-19:  STARBUCKS, MCDONALD'S, WHOLEFOODS and Median Household Income. 
+UPDATED THROUGH 8-02-19:  STARBUCKS, MCDONALD'S, WHOLEFOODS and Median Household Income. 
 We plan to build a SQL database to support research regarding location of Starbucks, McDonald's, Wholefoods and Median Household income by zip code.  We plan to have a user website for access to the data for answering questions such as:  Is there any coorelation between STARBUCKS, MCDONALDS, WHOLE FOODS or other retail spaces and MEDIAN household income? or What are the median incomes per zip code?
 or What zipcodes have the most concentrated representations of high end retail? or How many Starbucks and Wholefoods are present in what income brackets by Zip code?
  
