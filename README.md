@@ -2,7 +2,7 @@
 ETL Second Project
 TEAM consists of: John Goebel, Nick Weaver, Mohammed Irshad, and Carol Pietro
 
-Location of Web Services:  https://cmpietro.github.io/PROJECT_2_ETL/
+Location of Web Services:  https://cmpietro.github.io/PROJECT_2_ETL/index.html
 
 EXECUTIVE SUMMARY
 
